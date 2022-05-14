@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="root">
+      <h1> Welcome!</h1>
+      <div class="card">
+
+        <div>
+          <!-- <form onsubmit="return myFunction()"> -->
+            Bill
+            <input type="number" class="input-bill" id="bill">
+            <br><br>
+            Select Tip %
+            <br><br>
+            <div class="tip-list">
+              <button type="radio" class="tip-value" id="tip1" onclick="clicked(this.id)" name="5">5%</button>
+              <button type="radio" class="tip-value" id="tip2" onclick="clicked(this.id)" name="10">10%</button>
+              <button type="button" class="tip-value" id="tip3" onclick="clicked(this.id)" name="15">15%</button>
+
+              <button type="button" class="tip-value" id="tip4" onclick="clicked(this.id)" name="20">20%</button>
+              <button type="button" class="tip-value" id="tip5" onclick="clicked(this.id)" name="25">25%</button>
+              <input type="number" class="custom-tip" placeholder="CUSTOM" id="cus">
+
+
+
+
+            </div>
+            <br>
+            Number of People
+            <p class=error id="er1"><p>
+            <input type="number" class="input-people" id='people'>
+            <!-- <button type="submit" class="submit">Submit</button> -->
+          <!-- </form> -->
+            
+        </div>
+
+        <div class='right'>
+          <div class='right-item'>
+            
+
+            <div class="right-label">
+              <p>Tip Amount</p>
+              <p>/person</p>
+            </div>
+
+            <div class="price-label">
+              <p id="am"></p>
+            </div>
+          </div>
+          <br>
+          <div class='right-item'> 
+            
+            <div class="right-label">
+              <p>Total</p>
+              <p>/person</p>
+            </div>
+          
+            <div class="price-label">
+              <p id="total"></p>
+            </div>
+          </div> 
+
+            <button type="reset" class="reset" onclick="reSet()">Reset</button>
+        
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
